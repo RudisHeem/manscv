@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <title>Rūda CV</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            background-color: #eef6f9;
+            font-family: 'Verdana', sans-serif;
+            overflow-x: hidden;
+            color: #222;
+        }
+
+        nav.navbar {
+            background-color: #264653;
+        }
+
+        .navbar .nav-link {
+            color: #f1faee !important;
+        }
+
+        h1.page-title {
+            margin-top: 60px;
+            color: #1d3557;
+        }
+
+        .info-section {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 40px;
+            padding: 30px 20px;
+        }
+
+        .info-card {
+            background-color: #a8dadc;
+            border-radius: 12px;
+            padding: 20px;
+            width: 320px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .info-card h2 {
+            color: #023047;
+        }
+
+        canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -2; /* Canvas būs zem visiem citiem elementiem */
+        }
+
+    </style>
+</head>
+<body id="top">
+
+<!-- Navigācija bez GitHub -->
+<header>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#top">Sākums</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#par-mani">Par mani</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#izglitiba">Izglītība</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#darba-pieredze">Darba pieredze</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#varoņi">Mani varoņi</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <div class="container text-center">
+        <h1 class="page-title">Rūda CV</h1>
+    </div>
+
+    <section id="par-mani" class="info-section">
+        <div class="info-card">
+            <h2>Info par mani</h2>
+            <p><strong>Vārds:</strong> Rūdis Dimiševskis</p>
+            <p><strong>Vecums:</strong> 19 gadi</p>
+            <p><strong>Valodas:</strong> latviešu, angļu, minimāla krievu valoda</p>
+            <p><strong>Hobiji:</strong> ēšana, svaru cilāšana</p>
+            <p><strong>Prasmes:</strong> svaru cilāšana, meiteņu dabūšana</p>
+        </div>
+    </section>
+
+    <section id="izglitiba" class="info-section">
+        <div class="info-card">
+            <h2>Izglītība</h2>
+            <p>9. klases izglītība, cerams, ka pēc neilga laika arī 12. klases</p>
+            <p>Padziļinātie priekšmeti: matemātika, bioloģija, ķīmija</p>
+            <p>Pirmās palīdzības kurss</p>
+        </div>
+    </section>
+
+    <section id="darba-pieredze" class="info-section">
+        <div class="info-card">
+            <h2>Darba pieredze</h2>
+            <p>audzinātājs bērnu vasaras nometnē</p>
+            <p>tas viss pagaidām!</p>
+        </div>
+    </section>
+
+    <section id="varoņi" class="info-section">
+        <div class="info-card">
+            <h2>Mani varoņi</h2>
+            <p>LeBron James ir labākais cilvēks pasaulē. Viņš nav tikai izcils basketbolists, bet arī simbols smagam darbam, neatlaidībai un veltīšanai savai komandai un līdzcilvēkiem. Viņa talants un neatlaidība laukumā ir nepārspējama, bet ārpus laukuma viņš ir ne tikai ģimenes cilvēks, bet arī labdarības atbalstītājs, mentorējošs līderis un pozitīvs paraugs tūkstošiem jauniešu visā pasaulē. LeBron James ir dzīves pierādījums tam, ka ar smagu darbu, vīziju un neatlaidību var sasniegt neiedomājami augstus mērķus. Viņš ir daudz vairāk nekā sportists – viņš ir dzīves meistars un īsts varonis!</p>
+            
+            <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/2544.png" alt="LeBron James" class="hero-image" style="max-width: 100%; height: auto; border-radius: 10px;">
+            
+            <div class="text-center mt-4">
+                <a href="#top"
